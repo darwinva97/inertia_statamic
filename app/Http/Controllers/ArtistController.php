@@ -11,14 +11,11 @@ class ArtistController extends Controller
     function index()
     {
         // obtener las entradas de la colección "Artist" de statamic que está en este proyecto
-        $artists = Entry::all();
+        $artists = Entry::whereCollection('artist');
 
         // renderiza una vista de inertia con las entradas de la colección
         return Inertia::render('Artists', [
             'artists' => $artists
         ]);
-
-
-        // return Inertia::render('Welcome');
     }
 }

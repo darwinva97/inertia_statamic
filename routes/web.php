@@ -37,6 +37,7 @@ Route::middleware('auth')->group(function () {
 });
 
 
+// Route::resources([ArtistController::class])->name('artistas');
 Route::get('/artistas', [ArtistController::class, 'index'])->name('artistas');
 
 require __DIR__.'/auth.php';
