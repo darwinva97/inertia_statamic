@@ -217,6 +217,36 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: tags
+            field:
+              mode: default
+              create: true
+              taxonomies:
+                - tags
+              type: terms
+              display: Tags
+              icon: taxonomy
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: genres
+            field:
+              mode: default
+              create: true
+              taxonomies:
+                - genres
+              type: terms
+              display: Genres
+              icon: taxonomy
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:

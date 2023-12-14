@@ -1,7 +1,7 @@
 ---
 id: fc08e749-1291-4b39-8119-c4419267d1ac
 blueprint: song
-title: 'BO GO SHIP DA'
+title: 'BO GO SHIP DA - Kim Bum Soo'
 name: 'BO GO SHIP DA'
 profile_photo: songs/profile/bo-go-ship-da-profile.jpg
 cover_photo: songs/cover/bo-go-ship-da-cover.jpg
@@ -15,5 +15,10 @@ stars: 5
 artists:
   - 43a31102-601c-43ee-ad2f-d8b7b16752d5
 updated_by: 1
-updated_at: 1702569105
+updated_at: 1702570968
+tags:
+  - corea
+genres:
+  - balada-coreana
+youtube: 'https://www.youtube.com/watch?v=c_VG9felXyk'
 ---

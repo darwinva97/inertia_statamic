@@ -63,6 +63,55 @@ tabs:
               replicator_preview: true
               hide_display: false
               folder: artists/cover
+      -
+        display: relations
+        fields:
+          -
+            handle: songs
+            field:
+              mode: default
+              create: true
+              collections:
+                - song
+              type: entries
+              display: Songs
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: albums
+            field:
+              mode: default
+              create: true
+              collections:
+                - album
+              type: entries
+              display: Albums
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: band
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - band
+              type: entries
+              display: Band
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
