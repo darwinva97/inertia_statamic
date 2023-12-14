@@ -4,5 +4,6 @@ blueprint: artist
 title: Adelle
 name: Adelle
 updated_by: 1
-updated_at: 1702492294
+updated_at: 1702498765
+profile_picture: public/adelle-profile.jpg
 ---
