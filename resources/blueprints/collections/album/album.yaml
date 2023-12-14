@@ -3,7 +3,6 @@ tabs:
     display: Main
     sections:
       -
-        display: 'New Section'
         fields:
           -
             handle: title
@@ -18,7 +17,7 @@ tabs:
               input_type: text
               antlers: false
               type: text
-              display: name
+              display: Name
               icon: text
               listable: hidden
               instructions_position: above
@@ -30,7 +29,8 @@ tabs:
             field:
               max_files: 1
               mode: list
-              container: artists
+              container: album
+              folder: albums/profile
               restrict: false
               allow_uploads: true
               show_filename: true
@@ -43,13 +43,12 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-              folder: artists/profile
           -
             handle: cover_photo
             field:
-              max_files: 1
               mode: list
-              container: artists
+              container: album
+              folder: albums/cover
               restrict: false
               allow_uploads: true
               show_filename: true
@@ -62,7 +61,18 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-              folder: artists/cover
+          -
+            handle: featured
+            field:
+              default: true
+              type: toggle
+              display: Featured
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
@@ -74,4 +84,4 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
-title: Artist
+title: Album

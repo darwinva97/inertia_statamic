@@ -36,6 +36,44 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: profile_photo
+            field:
+              max_files: 1
+              mode: list
+              container: band
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Profile Photo'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: bands/profile
+          -
+            handle: cover_photo
+            field:
+              max_files: 1
+              mode: list
+              container: band
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Cover Photo'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: bands/cover
   sidebar:
     display: Sidebar
     sections:

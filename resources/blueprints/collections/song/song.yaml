@@ -1,0 +1,231 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: name
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Name
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: profile_photo
+            field:
+              max_files: 1
+              mode: list
+              container: song
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Profile Photo'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: songs/profile
+          -
+            handle: cover_photo
+            field:
+              max_files: 1
+              mode: list
+              container: song
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Cover Photo'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: songs/cover
+          -
+            handle: featured
+            field:
+              default: true
+              type: toggle
+              display: Featured
+              icon: toggle
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: audio
+            field:
+              max_files: 1
+              mode: list
+              container: song
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Audio
+              icon: assets
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: songs/audio
+          -
+            handle: video
+            field:
+              max_files: 1
+              mode: list
+              container: song
+              folder: songs/video
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Video
+              icon: assets
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: youtube
+            field:
+              type: video
+              display: Youtube
+              icon: video
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: audio_hot
+            field:
+              default: false
+              type: toggle
+              display: 'Audio Hot'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: video_hot
+            field:
+              default: false
+              type: toggle
+              display: 'Video Hot'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: trending
+            field:
+              default: false
+              type: toggle
+              display: Trending
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: plays
+            field:
+              default: '0'
+              type: integer
+              display: Plays
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: stars
+            field:
+              default: '5'
+              type: integer
+              display: Stars
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: relations
+        fields:
+          -
+            handle: band
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - band
+              type: entries
+              display: Band
+              icon: entries
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: artists
+            field:
+              mode: default
+              create: true
+              collections:
+                - artist
+              type: entries
+              display: Artists
+              icon: entries
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+title: Song
